@@ -12,7 +12,7 @@ with open('best_model.pkl', 'rb') as file:
 @app.route('/api/predict', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
-
+    print(data)
     if isinstance(data, dict):
         data = [data]
 
