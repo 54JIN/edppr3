@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import ChartDisplay from './components/ChartDisplay'  
 
 function App() {
   const [formData, setFormData] = useState({ homeworld: "", unit_type: "" })
@@ -44,6 +43,9 @@ function App() {
       </div>
       <div>
         <h2>Predicition: {predicition}</h2>
+      </div>
+      <div>
+        <ChartDisplay />
       </div>
     </div>
   )
